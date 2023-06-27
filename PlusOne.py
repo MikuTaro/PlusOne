@@ -6,8 +6,4 @@ class Solution(object):
         """
 
         self.num = int(''.join(map(str, digits))) + 1
-        self.num = [int(x) for x in str(self.num)]
-
-ans = Solution()
-ans.plusOne([9])
-print(ans.num)
+        return [int(x) for x in str(self.num)]
